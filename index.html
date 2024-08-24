@@ -16,10 +16,10 @@
 <body>
     <header>
         <div class="header-top">
-            <div class="search-bar">
-                <form action="" method="get">
-                    <button type="submit"><img class="magnify" src="assets/magnify.svg"></button><input type="text"
-                        placeholder="Search..">
+            <div class="headerclass">
+                <form class="search-bar" action="" method="get">
+                    <button id="search" type="submit"><img class="magnify" src="assets/magnify.svg"></button>
+                    <input type="text" placeholder="Search..">
                 </form>
             </div>
             <div class="profile">
@@ -33,14 +33,14 @@
                 <div class="greeting-message">Hello, User name</div>
             </div>
             <div class="nav-buttons">
-                <div class="new">
-                    <button>New</button>
+                <div class="buttons">
+                    <button class="nav">New</button>
                 </div>
-                <div class="upload">
-                    <button>Upload</button>
+                <div class="buttons">
+                    <button class="nav">Upload</button>
                 </div>
-                <div class="new">
-                    <button>Share</button>
+                <div class="buttons">
+                    <button class="nav">Share</button>
                 </div>
             </div>
         </div>
@@ -62,18 +62,44 @@
         </div>
     </div>
     <div class="main">
-        <div class="your-project headings">Your project
-            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi perferendis, amet, animi deserunt iusto expedita officiis ex quam labore repellat officia culpa fugiat praesentium similique voluptatem sit vel? Nam.</div>
-            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repudiandae quod, sunt non aspernatur voluptas vero placeat labore. Corrupti fugiat natus praesentium est modi commodi nam nobis mollitia. Deleniti, praesentium?</div>
-            <div class="cards">ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quisquam, adipisci molestiae hic porro suscipit rerum. Cupiditate praesentium, distinctio aut beatae quaerat consectetur repudiandae commodi aliquam quo. Laboriosam, magnam numquam.</div>
-            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero ea quasi vel fugit aspernatur beatae alias nihil, nemo non rerum porro, tenetur perferendis voluptas excepturi. Perferendis ipsam dolorum eveniet.</div>
-            <div class="cards">ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat, ipsam minus a, dolor nobis voluptatibus tempore quo doloremque, maxime animi praesentium debitis molestias aut facere nostrum iusto. Quasi, alias.</div>
-            <div class="cards">ipsam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum minus magni labore alias architecto sint fuga, maxime hic distinctio id, illo unde reiciendis. Consectetur, earum accusantium. Officia, ipsam veritatis?</div>
+        <div class="cards-container headings">
+            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi
+                perferendis, amet, animi deserunt iusto expedita officiis ex quam labore repellat officia culpa fugiat
+                praesentium similique voluptatem sit vel? Nam.</div>
+            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repudiandae quod, sunt
+                non aspernatur voluptas vero placeat labore. Corrupti fugiat natus praesentium est modi commodi nam
+                nobis mollitia. Deleniti, praesentium?</div>
+            <div class="cards">ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quisquam,
+                adipisci molestiae hic porro suscipit rerum. Cupiditate praesentium, distinctio aut beatae quaerat
+                consectetur repudiandae commodi aliquam quo. Laboriosam, magnam numquam.</div>
+            <div class="cards">ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vero ea quasi
+                vel fugit aspernatur beatae alias nihil, nemo non rerum porro, tenetur perferendis voluptas excepturi.
+                Perferendis ipsam dolorum eveniet.</div>
+            <div class="cards">ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat, ipsam
+                minus a, dolor nobis voluptatibus tempore quo doloremque, maxime animi praesentium debitis molestias aut
+                facere nostrum iusto. Quasi, alias.</div>
+            <div class="cards">ipsam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum minus
+                magni labore alias architecto sint fuga, maxime hic distinctio id, illo unde reiciendis. Consectetur,
+                earum accusantium. Officia, ipsam veritatis?</div>
         </div>
+    </div>
+    <div class="right-side">
         <div class="announcement">Announcement
-            <div class="news"><H3>Site maintanence</H3><br><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptates vitae iure suscipit. Adipisci aliquam atque, alias expedita assumenda quo quas cumque ullam.</p></div>
-            <div class="news"><h3>Community share day</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum maiores voluptatem, nesciunt quisquam a, necessitatibus facilis dolore reiciendis vel esse soluta aperiam?</p></div>
-            <div class="news"><h3>Updated site policy</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum maiores voluptatem, nesciunt quisquam a, necessitatibus facilis dolore reiciendis vel esse soluta aperiam?</p></div>
+            <div class="news">
+                <H3>Site maintanence</H3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptates vitae iure suscipit.
+                    Adipisci aliquam atque, alias expedita assumenda quo quas cumque ullam.</p>
+            </div>
+            <div class="news">
+                <h3>Community share day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum maiores voluptatem,
+                    nesciunt quisquam a, necessitatibus facilis dolore reiciendis vel esse soluta aperiam?</p>
+            </div>
+            <div class="news">
+                <h3>Updated site policy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum maiores voluptatem,
+                    nesciunt quisquam a, necessitatibus facilis dolore reiciendis vel esse soluta aperiam?</p>
+            </div>
         </div>
         <div class="trending headings">Trending
             <div class="userandom"><img src="" alt="">@user1</div>
@@ -81,8 +107,8 @@
             <div class="userandom"><img src="" alt="">@user3</div>
             <div class="userandom"><img src="" alt="">@user4</div>
         </div>
-
     </div>
+   
 </body>
 
 </html>
